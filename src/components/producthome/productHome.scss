@@ -1,0 +1,21 @@
+.myContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px; /* Khoảng cách giữa các grid item */
+}
+
+.myItem {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff; /* Màu nền của grid item */
+  transition: box-shadow 0.3s ease; /* Thêm transition cho hiệu ứng smooth */
+}
+
+.myItem:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Điều chỉnh box-shadow khi hover */
+}
+
+/* Nếu bạn muốn áp dụng các kiểu CSS khác cho ảnh hoặc các phần tử khác bên trong grid item */
+.myItem img {
+  width: 100%; /* Đảm bảo ảnh lấp đầy grid item */
+}

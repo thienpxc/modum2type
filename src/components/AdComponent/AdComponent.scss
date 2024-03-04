@@ -1,0 +1,21 @@
+/* styles.css */
+.ad-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // background-color: #fff;
+  padding: 20px;
+  // border: 1px solid #ccc;
+  z-index: 9999;
+}
+
+.ad-content {
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

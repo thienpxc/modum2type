@@ -1,0 +1,44 @@
+.account-container {
+  background-color: wheat;
+  position: absolute;
+  width: 19.7%;
+  z-index: 1000;
+  margin-top: 10px;
+  margin-left: 76pc;
+  padding-left: 12px;
+}
+.btn-account {
+}
+.account-image {
+  display: flex;
+  gap: 60px;
+}
+.ant-dropdown-link {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    color: #007bff;
+  }
+  display: inline-block;
+  position: relative;
+  left: 90%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 10px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 82em;
+}
+.account-info {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.account-email {
+  font-weight: bold;
+  color: #007bff;
+}

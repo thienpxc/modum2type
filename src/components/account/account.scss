@@ -1,0 +1,58 @@
+.account-body {
+  background-color: rgb(229, 227, 222);
+  height: 100%;
+
+}
+.account-footer{
+  margin-top: 470px;
+  padding-left: 40px;
+  background-color: rgba(0, 0, 0, 0.214);
+  border-top:solid 10px #ff1e00;
+  padding-top: 10px;
+  
+}
+
+.home-account {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 40px;
+
+  .avatar-account {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+  }
+  .name-account {
+    margin-top: 13px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+}
+.account-profiles {
+  margin-left: 100px;
+  margin-top: 20px;
+  font-size: 20px;
+  .element-gap {
+    margin-bottom: 50px;
+  }
+  .profile-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+  .profile-link:hover {
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.762);
+  }
+  .profile-link::after {
+    position: absolute;
+    top: 50%; /* Đẩy mũi tên xuống phía giữa */
+    right: -10px; /* Dịch mũi tên sang phải */
+    transform: translateY(-50%); /* Dịch mũi tên lên trên để căn giữa */
+    opacity: 0; /* Ẩn mũi tên ban đầu */
+    transition: opacity 0.3s; /* Hiệu ứng mượt khi hiển thị */
+  }
+}

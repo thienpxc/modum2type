@@ -1,0 +1,36 @@
+/* Định dạng chung cho form */
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Định dạng cho các input */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Đảm bảo kích thước của input tính cả border và padding */
+}
+
+/* Định dạng cho nút submit */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Định dạng cho thông báo lỗi */
+p {
+  color: red;
+}

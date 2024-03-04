@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Other global styles */
+}
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  header {
+    
+  background-color: wheat;
+  position: fixed;
+  top: 0;
+  width: 100%; // Đảm bảo header đầy đủ chiều rộng của trình duyệt
+  z-index: 1000; // Đảm bảo header hiển thị trên tất cả các phần tử khác
+
+  }
+  .ProductHome {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    min-height: calc(100vh - 60px);
+  }
+  footer {
+    height: 120px;
+    background-color: blue;
+  }
+}
