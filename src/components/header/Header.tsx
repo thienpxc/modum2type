@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import "./header.scss";
 import { Dropdown, Menu } from "antd";
 import { useNavigate } from "react-router-dom";
-
+import Logo from "../../image/Warner & Spencer.png";
 interface UserType {
   id: number;
   email: string;
@@ -58,38 +58,42 @@ console.log(accounts);
     </Menu>
   );
   return (
-    <header>
-      <div>
-        {accounts ? (
-          <Dropdown
-            overlay={<Menu onClick={onClick}>{menu}</Menu>}
-            placement="bottom"
-            className="btn-account"
-          >
-            <a
-              className="ant-dropdown-link"
-              onClick={(e) => e.preventDefault()}
+    <>
+      <header>
+        <div>
+          <img src={Logo}  className="logo" alt="logo" onClick={()=>{
+            navigate("/");
+          }} />
+          {accounts ? (
+            <Dropdown
+              overlay={<Menu onClick={onClick}>{menu}</Menu>}
+              placement="bottom"
+              className="btn-account"
             >
-              Xin chào: {accounts.userName}
-            </a>
-          </Dropdown>
-        ) : (
-          <Dropdown
-            overlay={<Menu onClick={onClick}>{menu}</Menu>}
-            placement="bottom"
-            className="btn-account"
-          >
-            <a
-              className="ant-dropdown-link"
-              onClick={(e) => e.preventDefault()}
+              <div
+                className="ant-dropdown-link"
+                onClick={(e) => e.preventDefault()}
+              >
+                Xin chào: {accounts.userName}
+              </div>
+            </Dropdown>
+          ) : (
+            <Dropdown
+              overlay={<Menu onClick={onClick}>{menu}</Menu>}
+              placement="bottom"
+              className="btn-account"
             >
-              Tài khoản
-            </a>
-          </Dropdown>
-        )}
-        
-      </div>
-    </header>
+              <a
+                className="ant-dropdown-link"
+                onClick={(e) => e.preventDefault()}
+              >
+                Tài khoản
+              </a>
+            </Dropdown>
+          )}
+        </div>
+      </header>
+    </>
   );
 };
 

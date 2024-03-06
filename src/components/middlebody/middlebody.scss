@@ -1,0 +1,41 @@
+.middle-body-container {
+  position: relative; /* Đặt vị trí của phần tử cha thành relative */
+}
+
+.middle-body-img {
+  width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của container */
+  height: 500px; /* Đảm bảo chiều cao tự động điều chỉnh theo tỷ lệ của hình ảnh */
+  filter: blur(2px); /* Làm mờ hình ảnh với độ mờ là 5px */
+}
+
+.middle-body-h3 {
+  color: #fcfcfc;
+  font-size: 30px;
+  padding-left: 30px;
+  padding-right: 10px;
+  position: absolute;
+  top: 30%; /* Đặt ô input ở giữa theo chiều dọc */
+  left: 50%; /* Đặt ô input ở giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Dịch chuyển ô input để nằm chính giữa */
+  z-index: 1000; /* Đảm bảo ô input nằm trên hình ảnh */
+}
+
+.search-input {
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 10px;
+  border: none;
+  border: 7px inset #2b0202b6;
+
+  border-radius: 60px;
+  position: absolute; /* Đặt vị trí của ô input thành absolute */
+  top: 50%; /* Đặt ô input ở giữa theo chiều dọc */
+  left: 50%; /* Đặt ô input ở giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Dịch chuyển ô input để nằm chính giữa */
+  z-index: 1; /* Đảm bảo ô input nằm trên hình ảnh */
+  width: 500px; /* Đặt chiều rộng của ô input */
+  height: 50px; /* Đặt chiều cao của ô input */
+}
+.search-input:focus {
+  outline: none; /* Loại bỏ outline khi ô input được focus */
+}

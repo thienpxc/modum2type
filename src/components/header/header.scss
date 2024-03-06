@@ -7,13 +7,13 @@
   margin-left: 76pc;
   padding-left: 12px;
 }
-.btn-account {
-}
+
 .account-image {
   display: flex;
   gap: 60px;
 }
 .ant-dropdown-link {
+  margin-left: -150px;
   color: black;
   text-decoration: none;
   &:hover {
@@ -26,7 +26,12 @@
   font-size: 20px;
   cursor: pointer;
 }
-
+.logo {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 4px;
+  cursor: pointer;
+}
 .avatar {
   width: 10px;
   height: auto;

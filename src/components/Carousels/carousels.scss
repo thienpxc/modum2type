@@ -1,0 +1,64 @@
+.carousel-container {
+  position: relative;
+
+  .control-button {
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    right: 99%;
+    font-size: 25px;
+    padding: 3px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; // Màu nền mặc định
+    box-shadow: 0 0 100px rgba(254, 0, 0, 0.726); // Hiệu ứng shadow mặc định
+  }
+
+  .control-button:hover {
+    font-size: 40px; // Kích thước lớn hơn khi hover
+    background-color: #f4f4f4; // Màu nền khi hover
+  }
+  .controls-button {
+    position: absolute;
+    top: 60%;
+    left: 99%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 3px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 0 100px rgba(254, 0, 0, 0.726);
+  }
+  .controls-button:hover {
+    font-size: 40px; // Kích thước lớn hơn khi hover
+    background-color: #f4f4f4; // Màu nền khi hover
+  }
+  .carousel {
+    margin-top: 10px;
+    h4 {
+      color: rgb(255, 0, 0);
+      font-size: 25px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+    span{
+      margin-right: -7px;
+    }
+    .ThunderboltOutlined{
+      margin-right: -4px;
+    }
+    .sale-title {
+      display: flex;
+      align-items: center; 
+
+       
+    }
+  }
+}

@@ -22,37 +22,36 @@ interface RootState {
 }
 
 const EditProfile: React.FC = () => {
- 
-
   const accounts = useSelector((store: RootState) => store.userStore.data);
   console.log(accounts);
- 
 
   return (
     <>
       <Header />
-      <div className="account-body">
-        <div className="home-account">
-          <img src={accounts.avatar} className="avatar-account" alt="" />
-          <div className="name-account">
-            xin chào {accounts.userName} !
-            <div>
-              <EditOutlined /> sửa hồ sơ
+      {accounts && (
+        <div className="account-body">
+          <div className="home-account">
+            <img src={accounts.avatar} className="avatar-account" alt="" />
+            <div className="name-account">
+              xin chào {accounts.userName} !
+              <div>
+                <EditOutlined /> sửa hồ sơ
+              </div>
             </div>
           </div>
+          <div className="account-profiles">
+            <h4>Tài khoản của tôi</h4>
+            <Link to={"profile"} className="profile-link">
+              Hồ Sơ
+            </Link>
+            <div>Địa chỉ</div>
+          </div>
+          <div className="account-footer">
+            <Footer />
+          </div>
+          <Outlet></Outlet>
         </div>
-        <div className="account-profiles">
-          <h4>Tài khoản của tôi</h4>
-          <Link to={"profile"} className="profile-link">
-            Hồ Sơ
-          </Link>
-          <div>Địa chỉ</div>
-        </div>
-        <div className="account-footer">
-          <Footer />
-        </div>
-        <Outlet></Outlet>
-      </div>
+      )}
     </>
   );
 };

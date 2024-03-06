@@ -5,4 +5,5 @@ export const productApi = {
   productApi: async () => {
     return await axios.get(`${import.meta.env.VITE_SERVER}/${product}`);
   },
+  
 };

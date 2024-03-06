@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 const prefix = "user";
 export const userApi = {
   fetchUser: async () => {

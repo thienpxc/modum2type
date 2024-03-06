@@ -1,7 +1,13 @@
 .myContainer {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 97%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px; /* Khoảng cách giữa các grid item */
+  gap: 10px; /* Khoảng cách giữa các grid item */
+  /* Màu nền của grid container */
 }
 
 .myItem {
@@ -12,10 +18,18 @@
 }
 
 .myItem:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Điều chỉnh box-shadow khi hover */
+  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.726); /* Điều chỉnh box-shadow khi hover */
 }
 
-/* Nếu bạn muốn áp dụng các kiểu CSS khác cho ảnh hoặc các phần tử khác bên trong grid item */
 .myItem img {
   width: 100%; /* Đảm bảo ảnh lấp đầy grid item */
+}
+.myContainer-h3{
+  color: #ff0000;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #ff0000;
 }

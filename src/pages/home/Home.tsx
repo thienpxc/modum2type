@@ -4,6 +4,8 @@ import Footer from "../../components/footer/Footer";
 import AdComponent from "../../components/AdComponent/AdComponent";
 import { useEffect, useState } from "react";
 import ProductHome from "../../components/producthome/ProductHome";
+import MiddleBody from "../../components/middlebody/MiddleBody";
+import Carousels from "../../components/Carousels/Carousels";
 
 export default function Home() {
   const [showAd, setShowAd] = useState(false);
@@ -23,12 +25,15 @@ export default function Home() {
     <>
       {showAd && <div className="overlay"></div>}
       {showAd && <AdComponent onClose={() => setShowAd(false)} />}
+
       <div className="home-page">
         <Header />
+        <MiddleBody />
         <div className="ProductHome">
+          <Carousels />
           <ProductHome />
+          <button className="SeeMore">Xem Thêm</button>
         </div>
-
         <Footer />
       </div>
     </>

@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-// import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+
 import apis from "../../apis";
 
 
@@ -18,11 +18,7 @@ interface User {
 interface UserState {
   data: User | null;
 }
-// const jobAll = createAsyncThunk("category/jobAll", async () => {
-//   const res = await axios.get("http://localhost:3000/user");
- 
-//   return res.data;
-// });
+
 
 const userSlice = createSlice({
   name: "user",

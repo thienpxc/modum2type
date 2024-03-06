@@ -1,9 +1,12 @@
 .account-body {
   background-color: rgb(229, 227, 222);
   height: 100%;
+  margin-bottom: 100px;
+
 
 }
 .account-footer{
+
   margin-top: 470px;
   padding-left: 40px;
   background-color: rgba(0, 0, 0, 0.214);
@@ -14,8 +17,9 @@
 
 .home-account {
   display: flex;
-  margin-left: 100px;
-  margin-top: 40px;
+  margin-left: 30px;
+  margin-top: 7px;
+  padding-top: 10px;
 
   .avatar-account {
     width: 70px;
@@ -32,8 +36,8 @@
   }
 }
 .account-profiles {
-  margin-left: 100px;
-  margin-top: 20px;
+  margin-left: 30px;
+  padding-top: 10px;
   font-size: 20px;
   .element-gap {
     margin-bottom: 50px;
